@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel ="stylesheet" th:href="@{/css/index.css}"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/d374f113ec.js" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" th:src="@{/js/index.js}"></script>
+
+<title>Gursimar Hehar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<div class="menu-toggler">
+			<div class="bar half start"></div>
+			<div class="bar"></div>
+			<div class="bar half start"></div>
+		</div>
+		<nav class="top-nav">
+			<ul class="list">
+				<li><a href="#" class="link"> HOME </a></li>
+				<li><a href="#about" class="link"> ABOUT </a></li>
+				<li><a href="#experience" class="link"> EXPERIENCE </a></li>
+				<li><a href="#portfolio" class="link"> PORTFOLIO </a></li>
+				<li><a href="#contact" class="link"> CONTACT </a></li>
+			</ul>
+		</nav>
+		<div class="textt">
+			<h1>Gursimar Hehar</h1>
+			<h6>SOFTWARE DEVELOPER | Looking for Winter 2021 Co-op Opportunities.</h6>
+
+		</div>
+	</header>
+	<section class="about" id="about">
+		<div class="container">
+			<div class="profilepic" data-aos="fade-right" data-aos-delay="300">
+				<img th:src="@{images/profile.jpg}"/>
+
+			</div>
+			<div class="about-details" data-aos="fade-left" data-aos-delay="600">
+				<div class="about-heading">
+					<h1>About</h1>
+					<h6>Myself</h6>
+				</div>
+				<p>Energetic and passionate college student working towards
+					Software Development and Network Engineering at Sheridan College,
+					Oakville. Currently looking for an winter 2021 Co-op opportunities, aiming to use my
+					knowledge acquired from my coursework as well as self-study and
+					working on various projects in the Industry.</p>
+	
+			</div>
+		</div>
+
+	</section>
+	<section class="services" id="services">
+		<div class="container">
+			<div class="heading">
+				<h1>Skills</h1>
+				<h6>What I Can Do?</h6>
+			</div>
+			<div class="myskills">
+				<div class="skill" data-aos="fade-in" data-aos-delay="300">
+					<div class="icons">
+						<i class="fas fa-code"></i>
+					</div>
+					<h1>Web Development</h1>
+					<p>Creative web designer and developer dedicated to building and optimizing
+						the performance of user-centric, high-impact
+						Web pages using HTML, CSS, and JavaScript</p>
+				</div>
+
+
+
+			</div>
+			<div class="skill" data-aos="fade-in" data-aos-delay="900">
+				<div class="icons">
+					<i class="fas fa-code"></i>
+				</div>
+				<h1>Software Development</h1>
+				<p>Result-oriented Software Developer experienced with object oriented programming and SDLC processes.
+				With extensive knowledge in building web applications using Java Spring, and Python Flask. In addition to this, 
+				Familiar with most popular Database technologies such as MySQL, NoSQL, MongoDB, MS SQL, and Firebase.
+					<div class="social-media">
+					<ul class="list">
+
+						<li><a href="https://github.com/Saiivy" class="icon"> <i
+								class="fab fa-github-square"></i>
+						</a></li>
+											</ul>
+				</div>
+				</p>
+			</div>
+
+		</div>
+		</div>
+	</section>
+
+
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="heading">
+				<h1>Portfolio</h1>
+				<h6>My Recent Projects</h6>
+			</div>
+		</div>
+		<div class="portfolio-item">
+			<div class="portfolioimg has-margin-left" data-aos="fade-right"
+				data-aos-delay="300">
+				<img th:src="@{images/portimage1.jpg}"/>
+
+			</div>
+			<div class="portfolio-description has-margin-right"
+				data-aos="fade-left" data-aos-delay="600">
+				<h1>FTracker</h1>
+				<p>Android application that displays players stats for the game
+					Fortnite. This project is my first dive into Android Development.
+					It serves as an exercise of UI design, third party APIs and HTTP
+					requests, JSON parsing, data persistence etc.</p>
+			</div>
+		</div>
+		<div class="portfolio-item">
+			<div class="portfolio-description has-margin-left"
+				data-aos="fade-right" data-aos-delay="300">
+				<h1>Corona Virus Tracker</h1>
+				<p>A Real-Time Corona Virus Tracker that tracks infected, deaths
+					and recovered patients all around the globe. Built with Java and
+					Javafx, including data visualisation like piecharts and graphs.
+					Grabs data using Covid-19 API.</p>
+			</div>
+			<div class="portfolioimg has-margin-right" data-aos="fade-left"
+				data-aos-delay="600">
+				<img th:src="@{images/corona.jfif}"/>
+			</div>
+		</div>
+
+		<div class="portfolio-item">
+			<div class="portfolioimg has-margin-left" data-aos="fade-left"
+				data-aos-delay="300">
+				<img th:src="@{images/hitler.png}"/>
+			</div>
+			<div class="portfolio-description" data-aos="fade-right"
+				data-aos-delay="600">
+				<h1>Secret Dictator Voting Bot</h1>
+				<p>Web Based Voting System made in Java. Replaces the old school method of voting i.e raising the thumb, opening the eyes
+				 etc. in the board game of Secret Dictator. Hence, eliminating the chances of cheating.
+				 Messages each player the unique role they have in the game.
+				The functionality of the program varies from 5-10 players. 
+				See the app in action Here:- <a href="http://choose-hitler.herokuapp.com/">Bot</a>
+				
+				</p>
+				
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="experience" id="experience">
+		<div class="container">
+			<div class="heading">
+				<h1>Education+Experience</h1>
+				<h6>My Journey</h6>
+			</div>
+			<div class="timeline" data-aos="fade-down" data-aos-delay="300">
+				<ul>
+					<li class="date" data-date="2019-Current">
+						<h1>Open to job opportunities</h1>
+						<p>Currently looking for internship, Alongside working on
+							several projects.</p>
+
+					</li>
+					<li class="date" data-date="2019-Current">
+						<h1>Started Computer Science</h1>
+						<p>Working towards Software Development and Network
+							Engineering at Sheridan College, Oakville.</p>
+					</li>
+					<li class="date" data-date="2017-2018">
+						<h1>High School</h1>
+						<p>Finished High-School with Maths, Chemistry and Physics in
+							2017.</p>
+					</li>
+			</div>
+		</div>
+	</section>
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="heading">
+				<h1>Contact</h1>
+				<h6>Let's Work Together</h6>
+			</div>
+			<form action="" th:action="@{/processContactRequest}" th:object="${formObject}" method ="POST" >
+				<label for="name"> Name: </label> 
+				<input type="text"  th:field="*{name}"> 
+				<p th:if = "${#fields.hasErrors('name')}" th:errors="*{name}"> </p>
+				<label for="email"> Email: </label> 
+				<input type="email" th:field="*{email}" > 
+				<p th:if = "${#fields.hasErrors('email')}" th:errors="*{email}"> </p>
+				<label for="message"> Message: </label>				
+				<input type="text" th:field= "*{message}"  > 
+				<p  th:if="${#fields.hasErrors('message')}" th:errors="*{message}"> </p>
+				<input type="submit" value="Submit">
+
+			</form>
+		</div>
+	</section>
+	<footer class="copyright">
+		<div class="up" id="up">
+			<i class="fas fa-chevron-up"></i>
+		</div>
+		<p>&copy; 2020 Gursimar Hehar</p>
+
+	</footer>
+</body>
+
+
+
+
+</html>

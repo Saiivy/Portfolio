@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+        @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    font-size:10px;
+    font-family:'roboto' sans-serif;
+    color:#eee;
+}
+body{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-image: url("/images/sitebg2.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+section{
+    padding:4rem 0;
+}
+
+/* for main page */
+
+a{
+    text-decoration: none;
+    color:#eee;
+}
+p{
+    font-size:1.8rem;
+    font-weight: 300;
+}
+img{
+    width:100%;
+
+}
+header{
+    width:100%;
+    height:100vh;
+}
+.top-nav{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    background-color:black;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1,0,0,1);
+    top: -100vh;
+    z-index:100;
+
+
+
+}
+ body{overflow-x: hidden;}
+.list
+{
+    list-style:none;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+li{
+    margin: 0 2rem;
+}
+.link{
+    font-family: 'The Historia Demo',sans-serif;
+    font-size:5rem;
+    padding:1rem;
+}
+.link:hover,
+.link:focus{
+    background : linear-gradient(to top, #ffe838,#fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.top-nav.open{
+    top:0;
+    border-radius:initial;
+
+}
+.menu-toggler{
+    position:absolute;
+    top:5rem;
+    right:5rem;
+    width:4rem;
+    height:4rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index:150000;
+    transition: transform 650ms ease-out;
+}
+.menu-toggler.open{
+    transform: rotate(-45deg);
+}
+.bar{
+    width:50px;
+    height:4px;
+    background:linear-gradient(to right,#ffe838,#fd57bf);
+    border-radius: .8rem;
+}
+.bar.half{
+    width:50%;
+}
+.bar.start{
+    transform-origin:right;
+    transition:transform 650ms cubic-bezier(0.54,-0.81,0.57,0.57);
+}
+open .bar.start{
+    transform:rotate(-50deg) translateX(.8rem);
+}
+.bar.end{
+    transform-origin:left;
+    align-self:flex-end;
+    transition:transform 650ms cubic-bezier(0.54,-0.81,0.57,0.57);
+}
+open.bar.end{
+    transform:rotate(-50deg) translateX(-.8rem);
+
+}
+.textt{
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align: center;
+    width:100%;
+    transform:translate(-50%,-50%);
+    z-index:1;
+}
+.textt h1{
+    font-size:20rem;
+    font-family:'The Historia Demo' , sans-serif;
+    background:linear-gradient(to top,#ffe838,#fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding:1rem;
+    user-select:none;
+}
+.textt h6{
+    font-size:3rem;
+    font-weight:300;
+    font-family: 'Odibee Sans' ;
+
+}
+.about .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about-heading h1{
+    font-size:10rem;
+    opacity: .3;
+}
+.about-heading h6{
+    font-size:2rem;
+    font-weight:300;
+
+}
+.about-heading{
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom:6rem;
+    font-family: 'Odibee Sans' ;
+
+}
+.profilepic{
+    flex:1;
+    margin-right:5rem;
+
+}
+.about-details{
+    flex:1;
+}
+.social-media{
+    margin-top:5rem;
+
+}
+.social-media i{
+    font-size: 5rem;
+    transition: color 650ms;
+}
+.fa-facebook:hover{
+    color: #4267b2;
+}
+.fa-youtube-square:hover{
+    color: red;
+}
+.fa-instagram-square:hover{
+    color: #e1306c;
+}
+.fa-github-square:hover{
+    color: #c9510c;
+}
+.fa-linkedin:hover{
+    color: #4267b2;
+
+}
+.myskills{
+    margin-top:10rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap:2.5rem;
+    text-align:center;
+
+}
+.container{
+    width:90%;
+    max-width: 120rem;
+    height:100%;
+    margin: 0 auto;
+    position:relative;
+}
+.heading{
+    text-align:center;
+    margin-top:20rem;
+        font-family: 'Odibee Sans' ;
+
+}
+.heading h1{
+    font-size:5rem;
+    color: rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-weight:300;
+    position:relative;
+    margin-bottom: 1rem;
+}
+.heading h6{
+    font-size:2rem;
+    font-weight: 300;
+}
+.heading h1::before, 
+.heading h1::after{
+    content: '';
+    position:absolute;
+    bottom: -0.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    background-color:rgba(255,255,255,0.75);
+}
+.heading h1::before{
+    width:10rem;
+    height:3px;
+    border-radius: .8rem;
+
+}
+.heading h1::after{
+    bottom: -1.0rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: .8rem
+
+}
+.skill{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    padding:2rem;
+}
+.skill h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+}
+.icons{
+    width:10rem;
+    height:10rem;
+    border: 3px solid #ffe838;
+    background-color: #fd57bf;
+    margin-bottom : 2rem;
+    display:flex;
+    transform: rotate(45deg);
+
+
+}
+.icons i{
+    color: #ffe838;
+    font-size: 5rem;
+    margin:auto;
+    transform: rotate(-45deg);
+
+}
+.portfolio-item{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom:5rem;
+
+}
+.portfolio-item:last-child{
+    margin-bottom:0;
+}
+.portfolioimg{
+    width: 50rem;
+    flex:1;
+    
+}
+.portfolio-description h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
+.portfolio-description{
+    flex:1;
+}
+.timeline ul{
+    border-left: 4px solid #ffe838;
+    border-radius: .8rem;
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 30%;
+    background-color: rgba(0,0,0,0.05);
+}
+.timeline h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.3;
+}
+.timeline .date{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom:1rem;
+    padding-bottom:1rem;
+    position:relative;
+        font-family: 'PT Sans';
+
+}
+.timeline .date:last-of-type{
+    padding-bottom:0;
+    margin-bottom:0;
+    border:none;
+}
+.timeline .date::before,
+.timeline .date::after{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display:block;
+
+}
+.timeline .date::before{
+    content: attr(data-date);
+    left:-21rem;
+    text-align:right;
+    min-width:12rem;
+    font-size:1.5rem;
+}
+.timeline .date::after{
+    content: '';
+    border-radius:100%;
+    box-shadow: 0 0 0 4px #fd57bf;
+    width:1.5rem;
+    height:1.5rem;
+    background-color:#313534;
+    left:-8rem;
+}
+.heading{
+    margin-bottom:4rem;
+
+}
+
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+form label{
+    font-size:1.5rem;
+}
+input,select,textarea{
+    width:100%;
+    padding:1rem;
+    margin-bottom: 5px;
+    border:none;
+    outline-color:#fd57bf;
+}
+input[type="submit"]{
+    width: initial;
+    background-color: #fd57bf;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius : .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color:#221e3f;
+    background-color:#ffe838;
+
+}
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    border-radius: 100%;
+    top:-2.5rem;
+    right: 5rem;
+    display:flex;
+    animation:pulse 2s infinite;
+    cursor: pointer;
+
+}
+.up i{
+    margin : auto;
+    font-size: 2rem;
+    color: #16162d;
+
+}
+.copyright{
+    width: 100%;
+    text-align:center;
+    padding: 2rem 0;
+    position: relative;
+    background-color:black;
+}
+.copyright p{
+    font-size: 1.4rem;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253,87,191,0);
+
+    }
+}
+
+
+.portfolio-description h1,p{
+    font-family: 'PT Sans';
+
+}
+.has-margin-right{
+        margin-right: 5rem;
+
+}
+.has-margin-left{
+        margin-left: 5rem;
+        padding-right:3rem;
+
+}
+.portfolio{
+    max-width: 100%;
+overflow: hidden;
+}
+@media screen and (max-width:768px){
+    body{
+        background-image: url("sitebg.jpg") no-repeat center fixed;
+        background-size:cover;
+    }
+    .textt h1{
+        font-size:15rem;
+    }
+    .textt h6{
+        font-size: 6rem;
+    }
+    .list{
+        flex-direction:column;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .about-heading h1{
+        font-size:6rem;
+    }
+    .about-heading h6{
+        font-size:3rem;
+    }
+    .heading h1{
+        font-size:6rem;
+    }
+    .heading h6{
+         font-size:3rem;
+    }
+    .icon{
+        font-size:4.5rem;
+    }
+    .about-details .list{
+        flex-direction:initial;
+    }
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .icons{
+        width: 7rem;
+        height: 7rem;
+    }
+    .icons i{
+        font-size: 4rem;
+    }
+    .timeline ul{
+        margin:0 0 0 auto;
+    }
+    .timeline .date::before{
+        left: -20rem;
+        
+    }
+    .timeline .date::after{
+        left:-5.9rem;
+    }
+        .portfolio{
+    max-width: 100%;
+overflow: hidden;
+}
+    
+}
+@media screen and (max-width:600px){
+    body{
+        background-image:url("abstract-art-black-background-blur-1040499.jpg");
+    }
+    .portfolio{
+    max-width: 100%;
+overflow: hidden;
+}
+    .menu-toggler{
+        top:2rem;
+        right:2rem;
+    }
+    .textt h1{
+        font-size:8rem;
+    }
+    .textt h6{
+        font-size: 1.6rem;
+    }
+     .icon{
+        font-size:3.5rem;
+    }
+    .about .container{
+        flex-direction:column;
+    }
+    .profilepic{
+        margin: 0 0 7rem 0;
+    }
+    .portfolio-item{
+        flex-direction:column;
+    }
+    .portfolioimg{
+        margin: 0 0 2rem 0;
+    }
+    .portfolio-description{
+        margin:0;
+        order:2;
+    }
+    .timeline p {
+        font-size: 1.6rem;
+    }
+    .timeline{
+        font-size:1.4rem;
+        margin-right:12rem;
+        
+    }
+ form{
+     width:100%;
+ }
+    .up{
+        right:2rem;
+    }
+    .copyright{
+        width:100%;
+    }
+    .contact,.heading,.portfolio-item,.social-media,.textt{
+       align-items:center;
+    }
+    .experience .heading h1{
+        font-size:8rem;
+    }
+    
+}
+
+
+
+
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #FFA114;
+	color: white;
+	font-family: Raleway, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
